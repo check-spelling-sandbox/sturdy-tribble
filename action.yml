@@ -12,3 +12,4 @@ runs:
       shell: bash
       run: |
         ls -hal $GITHUB_ACTION_PATH
+        ls -hal $GITHUB_ACTION_PATH/.github/workflows
