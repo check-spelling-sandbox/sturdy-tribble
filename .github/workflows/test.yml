@@ -1,0 +1,14 @@
+name: Test
+on:
+  push:
+
+jobs:
+  test:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4
+    - name: run
+      uses: ./

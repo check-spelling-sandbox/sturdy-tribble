@@ -1,0 +1,14 @@
+name: "Debug Actions"
+description: "Debug Action on disk format"
+author: "jsoref"
+branding:
+  icon: "edit-3"
+  color: "pink"
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v4
+    - name: look
+      shell: bash
+      run: |
+        ls -hal $GITHUB_ACTION_PATH
